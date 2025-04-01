@@ -2,7 +2,7 @@
 
 A repository that enables the training of a GCN-ANN based regressor that is able to predict HOMO and LUMO values with comprehensible, substructure-based, differentiable fingerprints.
 
-## steps to run:
+## Steps to run:
 
 #### make sure you have all the necessary python libraries installed with `pip install -r requirements.txt`
 
@@ -52,6 +52,7 @@ A repository that enables the training of a GCN-ANN based regressor that is able
         * prints out list of metrics 
         * `<directory>_<mn>.png` graph of predicted vs true energies
         * `<directory>_<mn>_preds.csv` .csv of predicted vs true energies
+<br/><br/>
 
 6) **substructure analysis for test sets**
 * `evaluate.py` contains code for generating most relevant substructures for the prediction of a certain energy across test set
