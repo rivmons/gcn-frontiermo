@@ -94,8 +94,8 @@ hl = homolumo
 data_path = f'../../data/hldata.csv'
 allData = pd.read_csv(data_path)
 
-trainData, valData, testData = np.split(allData.sample(frac=0.3), 
-                                        [int(.70*len(allData)*0.3), int(.85*len(allData)*0.3)])
+trainData, valData, testData = np.split(allData.sample(frac=1), 
+                                        [int(.70*len(allData)), int(.85*len(allData))])
 
 print(f'merged df shapes: {trainData.shape}, {valData.shape}, {testData.shape}')
 print(trainData.head())
